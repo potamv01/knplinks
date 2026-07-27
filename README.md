@@ -47,4 +47,4 @@ No supplement, device or branded product is recommended anywhere in this reposit
 
 Code is MIT licensed (see `LICENSE`). Clinical content is free to print, share and use in practice with attribution to Kingsnorth Neuro Physiotherapy.
 
-Contact: 01233 273699 · https://www.knneurophysiotherapy.co.uk/
+Contact: 01233 222444 · https://www.knneurophysiotherapy.co.uk/
