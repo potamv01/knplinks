@@ -2,601 +2,84 @@
 <html lang="en-GB">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Midlife ear and balance screening checklist — Kingsnorth Neuro Physiotherapy</title>
-<meta name="description" content="A free five-minute screening checklist for adults aged 40-65 with ear fullness, pressure, autophony, dizziness or unsteadiness. Separates obstructive and patulous Eustachian tube dysfunction from vestibular causes, with red flags and blood test guidance. For GPs, menopause practitioners and patients.">
-<link rel="canonical" href="https://potamv01.github.io/knplinks/ear-balance/">
+<title>Patient self-check tools — Kingsnorth Neuro Physiotherapy</title>
+<meta name="description" content="Free, evidence-based self-check tools from Kingsnorth Neuro Physiotherapy in Ashford, Kent. Structured screening checklists to help patients, GPs and menopause practitioners identify balance, ear and neurological problems earlier.">
+<link rel="canonical" href="https://potamv01.github.io/knplinks/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kingsnorth Neuro Physiotherapy">
-<meta property="og:title" content="The midlife ear and balance checklist">
-<meta property="og:description" content="Blocked ear, echoing voice, or dizziness in midlife? A five-minute structured screen that separates the two Eustachian tube patterns from vestibular causes - and flags what needs urgent assessment first.">
-<meta property="og:url" content="https://potamv01.github.io/knplinks/ear-balance/">
+<meta property="og:title" content="Patient self-check tools — Kingsnorth Neuro Physiotherapy">
+<meta property="og:description" content="Free, evidence-based screening checklists to help identify balance, ear and neurological problems earlier.">
+<meta property="og:url" content="https://potamv01.github.io/knplinks/">
 <meta property="og:image" content="https://potamv01.github.io/knplinks/social-card.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#10242B;
-  --ink-soft:#42585F;
-  --mist:#EAEEEC;
-  --paper:#FFFFFF;
-  --line:#CFD8D6;
-  --line-soft:#E3E9E7;
-  --obstructive:#1D5C7A;
-  --patulous:#9A5A16;
-  --vestibular:#5C4585;
-  --alert:#9B2626;
-  --alert-bg:#FBEDEC;
-  --ok:#1F6B52;
-  --radius:10px;
-  --measure:920px;
-}
+:root{--ink:#10242B;--ink-soft:#42585F;--mist:#EAEEEC;--paper:#fff;--line:#CFD8D6;--accent:#1F6B52;--radius:10px}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--mist);color:var(--ink);
-  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
-  font-size:16px;line-height:1.6;
-}
-.wrap{max-width:var(--measure);margin:0 auto;padding:0 20px 80px}
-a{color:var(--obstructive)}
-h1,h2,h3{font-family:Spectral,Georgia,serif;font-weight:500;letter-spacing:-0.01em;margin:0}
-h1{font-size:2.05rem;line-height:1.15}
-h2{font-size:1.4rem;line-height:1.25}
-h3{font-size:1.06rem}
-p{margin:0 0 12px}
-.eyebrow{
-  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--ink-soft);margin:0 0 8px
-}
-
-/* Header */
-header{background:var(--ink);color:#EDF2F0;padding:34px 0 30px;margin-bottom:26px}
-header .wrap{padding-bottom:0}
-header h1{color:#fff;max-width:22ch}
-header p{color:#B9C7C6;max-width:62ch;margin-top:12px}
-.masthead{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end}
-.brandbox{
-  border:1px solid #35494F;border-radius:var(--radius);padding:14px 16px;min-width:236px;
-  font-size:.86rem;color:#C6D3D2;line-height:1.5
-}
-.brandbox strong{color:#fff;display:block;font-weight:600;letter-spacing:.01em}
-.brandbox a{color:#8FD3BC;text-decoration:none}
-
-/* Controls bar */
-.controls{
-  display:flex;flex-wrap:wrap;gap:10px;align-items:center;
-  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
-  padding:12px 14px;margin-bottom:22px
-}
-.controls .label{font-size:.83rem;color:var(--ink-soft);margin-right:2px}
-button{
-  font-family:inherit;font-size:.9rem;font-weight:500;cursor:pointer;
-  background:var(--paper);color:var(--ink);border:1px solid var(--line);
-  border-radius:7px;padding:8px 14px;transition:background .15s,border-color .15s
-}
-button:hover{background:var(--mist);border-color:var(--ink-soft)}
-button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
-button.primary{background:var(--ok);border-color:var(--ok);color:#fff}
-button.primary:hover{background:#17553F;border-color:#17553F}
-:focus-visible{outline:3px solid #E0A800;outline-offset:2px}
-
-/* Sections */
-section{
-  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
-  padding:22px 24px;margin-bottom:20px
-}
-.sec-head{display:flex;gap:14px;align-items:baseline;margin-bottom:6px;flex-wrap:wrap}
-.step{
-  font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--ink-soft);
-  border:1px solid var(--line);border-radius:4px;padding:2px 7px;white-space:nowrap
-}
-.intro{color:var(--ink-soft);font-size:.94rem;max-width:70ch;margin-bottom:16px}
-
-/* Checkbox rows */
-fieldset{border:0;margin:0;padding:0}
-legend{
-  font-weight:600;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--ink-soft);padding:0;margin:18px 0 8px
-}
-.grp{border-top:1px solid var(--line-soft)}
-label.row{
-  display:flex;gap:12px;align-items:flex-start;padding:11px 12px;
-  border-bottom:1px solid var(--line-soft);cursor:pointer;transition:background .12s
-}
-label.row:hover{background:#F6F9F8}
-label.row input{margin:3px 0 0;width:18px;height:18px;flex:0 0 auto;accent-color:var(--obstructive)}
-.rowtext{flex:1}
-.rowtext .q{display:block}
-.rowtext .why{display:block;color:var(--ink-soft);font-size:.85rem;margin-top:3px}
-.tag{
-  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;
-  border-radius:4px;padding:2px 6px;white-space:nowrap;align-self:flex-start;margin-top:2px
-}
-.t-obs{background:#E7F0F5;color:var(--obstructive)}
-.t-pat{background:#F7EDE0;color:var(--patulous)}
-.t-ves{background:#EFEBF6;color:var(--vestibular)}
-.t-red{background:var(--alert-bg);color:var(--alert)}
-
-/* Red flag section */
-#redflags{border-color:#E4B7B4;border-left:5px solid var(--alert)}
-#redflags h2{color:var(--alert)}
-#redflags label.row input{accent-color:var(--alert)}
-.alertbar{
-  background:var(--alert-bg);border:1px solid #E4B7B4;border-radius:var(--radius);
-  padding:16px 18px;margin-bottom:16px
-}
-.alertbar:empty{border:0;padding:0;margin:0}
-.alertbar h3{color:var(--alert);margin-bottom:6px}
-.alertbar ul{margin:8px 0 0;padding-left:20px}
-.alertbar li{margin-bottom:5px}
-
-/* Gauge */
-.gauge{margin:6px 0 20px}
-.gauge-scale{position:relative;height:64px;margin:0 4px}
-.gauge-track{
-  position:absolute;top:26px;left:0;right:0;height:8px;border-radius:4px;
-  background:linear-gradient(90deg,#1D5C7A 0%,#8FA9AF 38%,#D8DEDC 50%,#C79E70 62%,#9A5A16 100%)
-}
-.gauge-marker{
-  position:absolute;top:14px;width:3px;height:32px;background:var(--ink);border-radius:2px;
-  transform:translateX(-50%);transition:left .35s ease
-}
-.gauge-marker::after{
-  content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%);
-  border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid var(--ink)
-}
-.gauge-ends{display:flex;justify-content:space-between;font-size:.8rem;color:var(--ink-soft);padding:0 4px}
-.gauge-ends span{max-width:15ch}
-.gauge-ends span:last-child{text-align:right}
-.gauge-mid{
-  position:absolute;top:20px;left:50%;width:1px;height:20px;background:var(--ink-soft);opacity:.45
-}
-
-/* Result cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:6px}
-.card{border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px;background:#FCFDFD}
-.card.lead{border-width:2px}
-.card h3{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:6px}
-.score{font-family:"IBM Plex Mono",monospace;font-size:.9rem;color:var(--ink-soft)}
-.card p{font-size:.9rem;color:var(--ink-soft);margin:0}
-.card.obs{border-color:#A9C6D4}.card.obs h3{color:var(--obstructive)}
-.card.pat{border-color:#DCC0A0}.card.pat h3{color:var(--patulous)}
-.card.ves{border-color:#C3B7DA}.card.ves h3{color:var(--vestibular)}
-.bar{height:5px;border-radius:3px;background:var(--line-soft);margin:10px 0 8px;overflow:hidden}
-.bar i{display:block;height:100%;width:0;border-radius:3px;transition:width .35s ease}
-.card.obs .bar i{background:var(--obstructive)}
-.card.pat .bar i{background:var(--patulous)}
-.card.ves .bar i{background:var(--vestibular)}
-.verdict{
-  margin-top:18px;padding:16px 18px;border-radius:var(--radius);
-  background:#F3F7F5;border:1px solid #C9DBD2
-}
-.verdict h3{margin-bottom:6px}
-.verdict p{margin-bottom:0;font-size:.95rem}
-
-/* Bloods table */
-table{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:8px}
-th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top}
-th{font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
-td strong{font-weight:600}
-.ev{font-family:"IBM Plex Mono",monospace;font-size:.72rem;padding:2px 6px;border-radius:4px;white-space:nowrap}
-.ev-a{background:#E4F0EA;color:var(--ok)}
-.ev-b{background:#FBF0DC;color:#7A5209}
-.ev-c{background:#EEF0F0;color:var(--ink-soft)}
-
-/* Summary + CTA */
-#summary{
-  white-space:pre-wrap;font-family:"IBM Plex Mono",monospace;font-size:.82rem;line-height:1.55;
-  background:#F7F9F9;border:1px solid var(--line);border-radius:var(--radius);
-  padding:14px 16px;margin-top:12px;max-height:none
-}
-.cta{background:var(--ink);color:#E9F1EF;border-color:var(--ink)}
-.cta h2{color:#fff}
-.cta p{color:#BACAC8;max-width:62ch}
-.cta a.btn{
-  display:inline-block;background:#8FD3BC;color:#0B2220;font-weight:600;text-decoration:none;
-  border-radius:7px;padding:11px 20px;margin-top:8px
-}
-.cta a.btn:hover{background:#A8E0CD}
-.ctagrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:18px}
-.ctagrid div{font-size:.9rem;color:#BACAC8}
-.ctagrid strong{display:block;color:#fff;font-weight:600;margin-bottom:3px}
-.ctagrid a{color:#8FD3BC}
-
-footer{font-size:.85rem;color:var(--ink-soft);max-width:78ch}
-footer h3{margin-bottom:8px}
-footer ol{padding-left:20px;margin:0 0 14px}
-footer li{margin-bottom:6px}
-.disclaimer{
-  border-left:3px solid var(--line);padding-left:14px;margin-top:18px;font-size:.85rem;color:var(--ink-soft)
-}
-.pt-only{display:none}
-body.patient .gp-only{display:none}
-body.patient .pt-only{display:block}
-body.patient label.row .pt-only{display:block}
-
-@media (max-width:640px){
-  h1{font-size:1.6rem}
-  section{padding:18px 16px}
-  .wrap{padding:0 14px 60px}
-}
+body{margin:0;background:var(--mist);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;font-size:16px;line-height:1.6}
+.wrap{max-width:840px;margin:0 auto;padding:0 20px 70px}
+h1,h2{font-family:Spectral,Georgia,serif;font-weight:500;letter-spacing:-0.01em;margin:0}
+h1{font-size:2.1rem;line-height:1.15;color:#fff;max-width:20ch}
+h2{font-size:1.25rem}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#8FB3AC;margin:0 0 10px}
+header{background:var(--ink);padding:44px 0 38px;margin-bottom:28px}
+header p{color:#B9C7C6;max-width:60ch;margin:14px 0 0}
+.card{display:block;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:16px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card h2{margin-bottom:6px;color:var(--accent)}
+.card p{margin:0;color:var(--ink-soft);font-size:.95rem}
+.meta{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:12px}
+.soon{background:transparent;border-style:dashed;opacity:.72;cursor:default}
+.soon:hover{border-color:var(--line);transform:none}
+.soon h2{color:var(--ink-soft)}
+.contact{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-top:28px}
+.contact a{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:14px;font-size:.92rem}
+.grid strong{display:block;margin-bottom:2px}
+footer{margin-top:26px;font-size:.85rem;color:var(--ink-soft);max-width:74ch}
+:focus-visible{outline:3px solid #E0A800;outline-offset:3px}
+@media (max-width:600px){h1{font-size:1.6rem}.wrap{padding:0 14px 50px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-@media print{
-  body{background:#fff;font-size:11pt}
-  header{background:#fff;color:#000;border-bottom:2px solid #000;padding:0 0 12px}
-  header h1,.cta h2{color:#000}
-  header p,.cta p,.ctagrid div{color:#333}
-  .brandbox{border-color:#999}
-  .brandbox strong,.brandbox a,.ctagrid strong,.ctagrid a{color:#000}
-  .controls,#copybtn,.cta a.btn{display:none}
-  section{break-inside:avoid;border-color:#999;box-shadow:none}
-  .cta{background:#fff;border:1px solid #999}
-  a[href^="http"]::after{content:" (" attr(href) ")";font-size:9pt;color:#555}
-}
 </style>
 
 <header>
-  <div class="wrap">
-    <div class="masthead">
-      <div>
-        <p class="eyebrow">Primary care screening tool &middot; version 1.1 &middot; July 2026</p>
-        <h1>The midlife ear and balance checklist</h1>
-        <p class="gp-only">A five-minute structured screen for adults aged 40–65 presenting with ear fullness, pressure, autophony, dizziness or unsteadiness. Separates obstructive Eustachian tube dysfunction, patulous Eustachian tube dysfunction and vestibular causes — and flags what needs ENT or emergency assessment first.</p>
-        <p class="pt-only">A five-minute questionnaire for anyone aged 40–65 with blocked, full or crackling ears, echoing of your own voice, dizziness or unsteadiness. It helps you work out what to describe to your GP, and what needs checking urgently.</p>
-      </div>
-      <div class="brandbox">
-        <strong>Kingsnorth Neuro Physiotherapy</strong>
-        Vestibular &amp; neurological physiotherapy<br>
-        Ashford, Kent TN23 6LN<br>
-        01233 222444<br>
-        <a href="https://www.knneurophysiotherapy.co.uk/">knneurophysiotherapy.co.uk</a>
-      </div>
-    </div>
+  <div class="wrap" style="padding-bottom:0">
+    <p class="eyebrow">Kingsnorth Neuro Physiotherapy &middot; Ashford, Kent</p>
+    <h1>Patient self-check tools</h1>
+    <p>Free, structured checklists built on published diagnostic criteria. They help you describe a problem accurately to your GP, and help clinicians route it to the right place first time. None of them diagnose anything.</p>
   </div>
 </header>
 
 <div class="wrap">
 
-  <div class="controls">
-    <span class="label">Reading as:</span>
-    <button id="btn-gp" aria-pressed="true" onclick="setMode('gp')">Clinician</button>
-    <button id="btn-pt" aria-pressed="false" onclick="setMode('patient')">Patient</button>
-    <span style="flex:1"></span>
-    <button onclick="window.print()">Print or save as PDF</button>
-    <button onclick="resetAll()">Clear answers</button>
+  <a class="card" href="./ear-balance/">
+    <h2>Midlife ear and balance checklist</h2>
+    <p>For adults roughly 40 to 65 with blocked or full ears, an echoing voice, crackling, dizziness or unsteadiness. Separates the two Eustachian tube patterns from vestibular causes, flags what needs urgent assessment, and covers when blood tests are worth doing.</p>
+    <p class="meta">Clinician and patient views &middot; printable &middot; 5 minutes</p>
+  </a>
+
+  <div class="card soon">
+    <h2>More tools in progress</h2>
+    <p>Further self-check tools covering falls risk, post-stroke recovery and Parkinson's mobility are being prepared and will appear here.</p>
+    <p class="meta">In development</p>
   </div>
 
-  <div class="alertbar" id="alertbar" role="alert"></div>
-
-  <!-- 1. RED FLAGS -->
-  <section id="redflags">
-    <div class="sec-head"><span class="step">Step 1</span><h2>Red flags — screen before anything else</h2></div>
-    <p class="intro gp-only">Tick anything present. These override symptom pattern and are not appropriate for direct physiotherapy referral until assessed.</p>
-    <p class="intro pt-only">Tick anything that sounds like you. These are the things a doctor needs to check before any rehabilitation is started.</p>
-    <div class="grp" id="flags"></div>
-  </section>
-
-  <!-- 2. EAR PATTERN -->
-  <section>
-    <div class="sec-head"><span class="step">Step 2</span><h2>Ear pattern — which way is the tube failing?</h2></div>
-    <p class="intro gp-only">The two Eustachian tube subtypes present with overlapping fullness but opposite mechanics, and opposite management. Autophony of one's own breathing and relief on lying flat are the highest-value discriminators for the patulous subtype. Tick all that apply.</p>
-    <p class="intro pt-only">"Blocked ear" and "too-open ear" feel surprisingly similar, but they are opposites and need different help. Tick everything that sounds like you.</p>
-    <fieldset><legend>Fullness and pressure</legend><div class="grp" id="ear1"></div></fieldset>
-    <fieldset><legend>Sound of your own voice and breathing</legend><div class="grp" id="ear2"></div></fieldset>
-    <fieldset><legend>What makes it better or worse</legend><div class="grp" id="ear3"></div></fieldset>
-    <fieldset><legend>Background and context</legend><div class="grp" id="ear4"></div></fieldset>
-  </section>
-
-  <!-- 3. BALANCE -->
-  <section>
-    <div class="sec-head"><span class="step">Step 3</span><h2>Balance pattern — timing beats description</h2></div>
-    <p class="intro gp-only">Route on episode duration and trigger, not on the adjective the patient uses for "dizzy". Categories follow the Bárány Society International Classification of Vestibular Disorders.</p>
-    <p class="intro pt-only">How long the dizziness lasts, and what sets it off, matters far more than the word you use to describe it. Tick what fits best.</p>
-    <div class="grp" id="bal"></div>
-  </section>
-
-  <!-- 4. RESULT -->
-  <section id="result">
-    <div class="sec-head"><span class="step">Step 4</span><h2>Working pattern</h2></div>
-    <p class="intro gp-only">This is a pattern-recognition aid, not a diagnosis. It weights the discriminating features above; it does not replace otoscopy, tympanometry, audiometry or positional testing.</p>
-    <p class="intro pt-only">Here is what your answers point towards. It is a guide for the conversation with your GP — not a diagnosis.</p>
-
-    <div class="gauge">
-      <div class="gauge-scale">
-        <div class="gauge-track"></div>
-        <div class="gauge-mid"></div>
-        <div class="gauge-marker" id="marker" style="left:50%"></div>
-      </div>
-      <div class="gauge-ends">
-        <span>Tube stays shut &middot; negative pressure</span>
-        <span>Tube stays open &middot; autophony</span>
-      </div>
-    </div>
-
-    <div class="cards">
-      <div class="card obs" id="c-obs">
-        <h3>Obstructive ETD <span class="score" id="s-obs">0</span></h3>
-        <div class="bar"><i id="b-obs"></i></div>
-        <p class="gp-only">Failure to dilate. Fullness, muffled hearing, popping, worse with colds, altitude and flying. Consider ETDQ-7, tympanometry, treat nasal inflammation first.</p>
-        <p class="pt-only">The tube is struggling to open. Ears feel blocked and muffled, and worse with colds or flying.</p>
-      </div>
-      <div class="card pat" id="c-pat">
-        <h3>Patulous ETD <span class="score" id="s-pat">0</span></h3>
-        <div class="bar"><i id="b-pat"></i></div>
-        <p class="gp-only">Abnormally patent tube. Autophony of voice <em>and</em> breathing, relieved lying down or by sniffing. Ask about rapid weight loss, including GLP-1 agonists and bariatric surgery. Decongestants and auto-inflation make it worse.</p>
-        <p class="pt-only">The tube is staying open when it should be shut. Your own voice and breathing sound loud inside your head, and lying down helps.</p>
-      </div>
-      <div class="card ves" id="c-ves">
-        <h3>Vestibular cause <span class="score" id="s-ves">0</span></h3>
-        <div class="bar"><i id="b-ves"></i></div>
-        <p class="gp-only">Inner ear or central balance origin rather than middle ear. Sub-type by duration and trigger, then treat with positional manoeuvres or vestibular rehabilitation.</p>
-        <p class="pt-only">The dizziness is coming from the balance organ or its brain pathways, rather than from ear pressure.</p>
-      </div>
-    </div>
-
-    <div class="verdict" id="verdict">
-      <h3 id="v-title">Nothing ticked yet</h3>
-      <p id="v-body">Work through steps 1 to 3 and a suggested next step will appear here.</p>
-    </div>
-
-    <button id="copybtn" class="primary" style="margin-top:16px" onclick="copySummary()">Copy summary for the notes</button>
-    <div id="summary" role="region" tabindex="0" aria-label="Summary for the notes">Your summary will appear here.</div>
-  </section>
-
-  <!-- 5. BLOODS -->
-  <section>
-    <div class="sec-head"><span class="step">Step 5</span><h2>When bloods are worth checking</h2></div>
-    <p class="intro gp-only">Bloods do not diagnose Eustachian tube dysfunction and no supplement treats it. Their value is in excluding mimics of unsteadiness and in one specific place with trial evidence: reducing BPPV recurrence in deficient patients. Order on indication, not as a panel.</p>
-    <p class="intro pt-only">Blood tests cannot diagnose an ear tube problem, and no vitamin will fix one. They are useful for ruling out other causes of unsteadiness — and in one situation, for reducing how often positional vertigo comes back.</p>
-    <table>
-      <thead><tr><th>Test</th><th>Check when</th><th>What it changes</th><th>Evidence</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><strong>25(OH) vitamin D</strong></td>
-          <td>Recurrent BPPV, especially postmenopausal; housebound or low sun exposure</td>
-          <td>Correcting deficiency reduces BPPV recurrence in deficient patients; supports bone and muscle function</td>
-          <td><span class="ev ev-a">RCT / meta-analysis</span></td>
-        </tr>
-        <tr>
-          <td><strong>B12 and folate</strong></td>
-          <td>Unsteadiness without spinning, wide-based gait, altered sensation, metformin or PPI use, vegan diet</td>
-          <td>Deficiency mimics vestibular unsteadiness and is reversible if caught early</td>
-          <td><span class="ev ev-b">Observational / case</span></td>
-        </tr>
-        <tr>
-          <td><strong>FBC and ferritin</strong></td>
-          <td>Fatigue, breathlessness, heavy perimenopausal bleeding, lightheadedness on standing</td>
-          <td>Anaemia is a common non-vestibular cause of "dizzy" in this age group</td>
-          <td><span class="ev ev-b">Observational</span></td>
-        </tr>
-        <tr>
-          <td><strong>Thyroid function</strong></td>
-          <td>Unexplained fatigue, weight change, palpitations alongside dizziness</td>
-          <td>Overlaps heavily with menopausal symptoms and is easily missed</td>
-          <td><span class="ev ev-c">Mimic exclusion</span></td>
-        </tr>
-        <tr>
-          <td><strong>HbA1c, U&amp;E, calcium</strong></td>
-          <td>Falls, postural symptoms, polypharmacy, rapid or intentional weight loss</td>
-          <td>Postural hypotension, electrolyte and glycaemic causes of unsteadiness</td>
-          <td><span class="ev ev-c">Mimic exclusion</span></td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="disclaimer">Note on rapid weight loss: sudden loss of weight — including on GLP-1 receptor agonists or after bariatric surgery — is a recognised trigger for patulous Eustachian tube symptoms, through reduction of the Ostmann fat pad that holds the tube closed. This is a mechanical consequence, not a nutritional deficiency, and it usually improves as weight stabilises.</p>
-  </section>
-
-  <!-- 6. CTA -->
-  <section class="cta">
-    <h2>Referring on</h2>
-    <p class="gp-only">Kingsnorth Neuro Physiotherapy provides vestibular assessment and rehabilitation in Ashford and across Kent — clinic, home visit or video consultation. We are the right destination once red flags are excluded and the picture is positional, post-vestibular, persistent-functional or deconditioning-related. We are not the right destination for undiagnosed unilateral effusion, sudden hearing loss or acute vertigo with neurological signs — those go to ENT or the emergency pathway first.</p>
-    <p class="pt-only">If your answers point towards a balance cause, vestibular rehabilitation is an evidence-based treatment and you can be seen in clinic, at home, or by video across Kent. Take this completed checklist to your GP appointment.</p>
-    <a class="btn" href="https://www.knneurophysiotherapy.co.uk/">Refer or book an assessment</a>
-    <div class="ctagrid">
-      <div><strong>Clinic</strong>Ashford, Kent TN23 6LN<br>Home visits across Kent and Medway</div>
+  <div class="contact">
+    <h2 style="margin-bottom:8px">About these tools</h2>
+    <p style="margin:0;color:var(--ink-soft);font-size:.95rem">Produced by Kingsnorth Neuro Physiotherapy, a private neurological and vestibular physiotherapy practice in Ashford serving Kent and Medway. Clinic, home visit and video appointments.</p>
+    <div class="grid">
+      <div><strong>Website</strong><a href="https://www.knneurophysiotherapy.co.uk/">knneurophysiotherapy.co.uk</a></div>
       <div><strong>Telephone</strong>01233 222444</div>
-      <div><strong>Registration</strong>HCPC registered, Chartered Society of Physiotherapy</div>
-      <div><strong>Online</strong><a href="https://www.knneurophysiotherapy.co.uk/">knneurophysiotherapy.co.uk</a></div>
+      <div><strong>Clinic</strong>Ashford, Kent TN23 6LN</div>
+      <div><strong>Registration</strong>HCPC registered, CSP member</div>
     </div>
-  </section>
+  </div>
 
   <footer>
-    <h3>Where this comes from</h3>
-    <ol>
-      <li>Bárány Society, Committee for the Classification of Vestibular Disorders — International Classification of Vestibular Disorders consensus documents, including BPPV (2015), vestibular migraine (2012, updated 2021) and persistent postural-perceptual dizziness (2017). <a href="https://www.thebaranysociety.org/icvd-consensus-documents/">thebaranysociety.org</a></li>
-      <li>ENT UK (British Association of Otorhinolaryngology – Head and Neck Surgery), professional standards and referral guidance for adult ear disease. <a href="https://fssa.org.uk/associations/british_association_of_otorhinolaryngology_head_and_neck_entuk.aspx">ENT UK via FSSA</a></li>
-      <li>NICE guidance and CKS on suspected head and neck cancer referral, hearing loss and vertigo, including urgent referral for unilateral middle ear effusion in adults not attributable to infection.</li>
-      <li>ETDQ-7 (Eustachian Tube Dysfunction Questionnaire-7), the validated patient-reported measure for obstructive ETD; a total above 14 out of 49, or a mean item score above 2, is commonly used as the abnormal threshold.</li>
-      <li>Peer-reviewed literature on patulous Eustachian tube and weight loss, Ostmann fat pad change with age, and vitamin D status in BPPV recurrence. Full reference list available from the clinic on request.</li>
-    </ol>
-    <div class="disclaimer">
-      <p><strong>Scope and limits.</strong> This checklist is a structured history aid for adults aged roughly 40 to 65. It does not diagnose, does not replace otoscopy, tympanometry, audiometry or positional testing, and must not be used to defer assessment of any red flag. Symptom scores are weighted by clinical discriminating value, not derived from a validated scoring system.</p>
-      <p><strong>Declaration.</strong> This resource recommends no supplement, device or branded product, and no commercial product is referenced anywhere in it. It is produced by Kingsnorth Neuro Physiotherapy, a private physiotherapy provider; the referral information above is a signpost, not a clinical recommendation.</p>
-      <p>Version 1.1, July 2026. Review date July 2027. Free to print, share and use in practice. Part of the <a href="../">KNP patient self-check links</a> collection.</p>
-    </div>
+    <p>These tools are screening aids, not diagnostic tests, and do not replace clinical examination. If you have sudden hearing loss, continuous vertigo with new neurological symptoms, or any other symptom marked urgent within a tool, contact your GP practice or emergency services rather than waiting for an appointment.</p>
+    <p>No supplement, device or branded product is recommended anywhere in this collection. Free to print, share and use in practice.</p>
   </footer>
 </div>
-
-<script>
-const FLAGS=[
- {id:"f1",gp:"Sudden hearing loss in one ear over less than 72 hours, with a normal-looking eardrum",pt:"Your hearing dropped suddenly in one ear over hours or a couple of days",why:"Possible sudden sensorineural hearing loss",act:"Same-day ENT assessment. Steroid treatment is time-critical."},
- {id:"f2",gp:"Persistent fluid behind one eardrum in an adult, with no preceding upper respiratory infection",pt:"One ear has stayed blocked for weeks and it did not start with a cold",why:"Unilateral adult middle ear effusion needs nasendoscopy",act:"Urgent ENT referral to exclude a nasopharyngeal cause. Risk is higher in people of Chinese or South-East Asian family origin."},
- {id:"f3",gp:"Continuous vertigo for over 24 hours with new headache, double vision, slurred speech, limb weakness or numbness",pt:"Dizziness that has not stopped for a day, with a new bad headache, double vision, slurred speech or weakness",why:"Central cause until proven otherwise",act:"Emergency assessment now — call 999 or go to A&E. Do not refer to physiotherapy."},
- {id:"f4",gp:"New one-sided facial weakness, or vertigo with new focal neurological signs",pt:"New weakness or drooping on one side of your face",why:"Facial nerve or central involvement",act:"Same-day medical assessment."},
- {id:"f5",gp:"Ear discharge, foul smell, or white debris in an attic or marginal retraction",pt:"Discharge, a bad smell, or crusting coming from the ear",why:"Possible cholesteatoma or chronic suppurative disease",act:"Urgent ENT referral. Not a physiotherapy presentation."},
- {id:"f6",gp:"Pulsatile tinnitus, or new one-sided tinnitus with hearing loss",pt:"A whooshing noise in time with your heartbeat, or new ringing in one ear only",why:"Requires imaging and audiology",act:"Refer for audiology and ENT assessment."},
- {id:"f7",gp:"Unexplained weight loss, night sweats, neck lump, or blood-stained nasal discharge",pt:"Unexplained weight loss, a lump in your neck, or blood in nasal mucus",why:"Systemic or head and neck red flag",act:"Follow the suspected head and neck cancer referral pathway."},
- {id:"f8",gp:"First-ever severe vertigo in a patient with vascular risk factors and no clear positional trigger",pt:"Your first ever severe attack of spinning, and you have high blood pressure, diabetes or heart problems",why:"Posterior circulation stroke can present as isolated vertigo",act:"Same-day medical assessment before any repositioning manoeuvre."}
-];
-
-const EAR1=[
- {id:"e1",w:{o:3},t:"obs",gp:"Persistent blocked or full sensation in one or both ears",pt:"Your ear feels blocked, full or under pressure"},
- {id:"e2",w:{o:3},t:"obs",gp:"Hearing sounds muffled or underwater when the fullness is present",pt:"Sounds seem muffled, like being underwater"},
- {id:"e3",w:{o:2},t:"obs",gp:"Crackling or popping noises, particularly on swallowing or yawning",gpwhy:"",pt:"Crackling or popping when you swallow or yawn"},
- {id:"e4",w:{o:3},t:"obs",gp:"Symptoms clearly worsen with colds, hay fever, flying or altitude change",pt:"It gets much worse with colds, hay fever or flying"},
- {id:"e5",w:{o:2},t:"obs",gp:"ETDQ-7 completed and total above 14 out of 49",pt:"You have completed an ear questionnaire and scored above the cut-off"}
-];
-const EAR2=[
- {id:"e6",w:{p:4},t:"pat",gp:"Own voice sounds abnormally loud or echoing inside the ear (autophony)",pt:"Your own voice booms or echoes inside your ear"},
- {id:"e7",w:{p:5},t:"pat",gp:"Own breathing is audible in the ear, in time with each breath",pt:"You can hear yourself breathing inside your ear, with every breath",gpwhy:"Highest-value single discriminator for the patulous subtype"},
- {id:"e8",w:{p:2},t:"pat",gp:"Eardrum seen to move in time with respiration on otoscopy",pt:"A clinician has seen your eardrum moving as you breathe"}
-];
-const EAR3=[
- {id:"e9",w:{p:4},t:"pat",gp:"Symptoms improve markedly on lying flat, bending forward or putting the head between the knees",pt:"It gets much better when you lie down or bend forward",gpwhy:"Venous engorgement closes the tube — near-diagnostic when combined with autophony"},
- {id:"e10",w:{p:3},t:"pat",gp:"Sniffing hard temporarily relieves the symptom",pt:"Sniffing hard gives you brief relief"},
- {id:"e11",w:{p:2},t:"pat",gp:"Worse when tired, dehydrated, after exercise or later in the day",pt:"Worse when tired, dehydrated or after exercise"},
- {id:"e12",w:{o:3},t:"obs",gp:"Valsalva or auto-inflation relieves the fullness, even briefly",pt:"Popping your ears gives you relief"},
- {id:"e13",w:{o:2},t:"obs",gp:"Decongestant or nasal steroid has previously helped",pt:"Nasal spray or decongestant has helped before"}
-];
-const EAR4=[
- {id:"e14",w:{p:4},t:"pat",gp:"Rapid or substantial weight loss in the last 12 months, including GLP-1 agonist or bariatric surgery",pt:"You have lost a lot of weight quickly in the past year",gpwhy:"Reduces the Ostmann fat pad that holds the tube closed"},
- {id:"e15",w:{o:2},t:"obs",gp:"Known allergic rhinitis, chronic rhinosinusitis or marked septal deviation",pt:"You have hay fever, sinus trouble or a blocked nose most of the time"},
- {id:"e16",w:{o:2},t:"obs",gp:"Reflux symptoms — throat clearing, postnasal drip, globus",pt:"Frequent throat clearing, catarrh at the back of the nose, or a lump-in-throat feeling"},
- {id:"e17",w:{o:1,p:1},t:"",gp:"Perimenopausal or postmenopausal, or on hormone therapy",pt:"You are going through, or past, the menopause",gpwhy:"Ear pressure, dryness and dizziness are commonly reported; evidence is associative rather than causal"}
-];
-const BAL=[
- {id:"b1",w:{v:5},t:"ves",gp:"Brief spinning under one minute, triggered by lying down, rolling over, looking up or bending",pt:"Short bursts of spinning when you lie down, roll over or look up",gpwhy:"Bárány criteria for BPPV — confirm with Dix–Hallpike or supine roll"},
- {id:"b2",w:{v:3},t:"ves",gp:"Episodes lasting 5 minutes to 72 hours, at least half with headache, light sensitivity or visual aura",pt:"Attacks lasting minutes to a few days, often with headache or light sensitivity",gpwhy:"Consistent with vestibular migraine"},
- {id:"b3",w:{v:4},t:"ves",gp:"Non-spinning dizziness or unsteadiness on most days for 3 months or more, worse standing, moving, and in busy visual environments",pt:"Daily unsteadiness for months, worse standing up, moving about, and in supermarkets or crowds",gpwhy:"Consistent with PPPD — responds to vestibular rehabilitation, not to vestibular sedatives"},
- {id:"b4",w:{v:4},t:"ves",gp:"A single prolonged attack in the past, then persisting imbalance and head-motion sensitivity",pt:"You had one big attack of vertigo, and have felt off-balance ever since"},
- {id:"b5",w:{v:3},t:"ves",gp:"Fluctuating hearing loss, tinnitus and fullness with vertigo attacks lasting 20 minutes to 12 hours",pt:"Vertigo attacks with changing hearing and roaring in the same ear",gpwhy:"Consider Ménière's disease — ENT and audiology first"},
- {id:"b6",w:{v:3},t:"ves",gp:"Increasing unsteadiness in the dark or on uneven ground, with or without falls in the last year",pt:"More unsteady in the dark or on uneven ground, or you have had a fall"},
- {id:"b7",w:{v:2},t:"ves",gp:"Avoiding activities, driving or social situations because of the dizziness",pt:"You are avoiding driving, going out or exercise because of it"}
-];
-
-const ALL=[...EAR1,...EAR2,...EAR3,...EAR4,...BAL];
-const state={};
-
-function rowHTML(item,cls){
-  const tag=item.t?`<span class="tag t-${item.t==='obs'?'obs':item.t==='pat'?'pat':'ves'}">${item.t==='obs'?'obstructive':item.t==='pat'?'patulous':'vestibular'}</span>`:'';
-  const why=item.gpwhy?`<span class="why gp-only">${item.gpwhy}</span>`:'';
-  return `<label class="row">
-    <input type="checkbox" id="${item.id}" onchange="tick(this)">
-    <span class="rowtext">
-      <span class="q gp-only">${item.gp}</span>
-      <span class="q pt-only">${item.pt}</span>
-      ${why}
-    </span>${tag}
-  </label>`;
-}
-function flagHTML(f){
-  return `<label class="row">
-    <input type="checkbox" id="${f.id}" onchange="tick(this)">
-    <span class="rowtext">
-      <span class="q gp-only">${f.gp}</span>
-      <span class="q pt-only">${f.pt}</span>
-      <span class="why gp-only">${f.why}</span>
-    </span><span class="tag t-red">red flag</span>
-  </label>`;
-}
-document.getElementById('flags').innerHTML=FLAGS.map(flagHTML).join('');
-document.getElementById('ear1').innerHTML=EAR1.map(rowHTML).join('');
-document.getElementById('ear2').innerHTML=EAR2.map(rowHTML).join('');
-document.getElementById('ear3').innerHTML=EAR3.map(rowHTML).join('');
-document.getElementById('ear4').innerHTML=EAR4.map(rowHTML).join('');
-document.getElementById('bal').innerHTML=BAL.map(rowHTML).join('');
-
-function tick(el){state[el.id]=el.checked;update();}
-function setMode(m){
-  document.body.classList.toggle('patient',m==='patient');
-  document.getElementById('btn-gp').setAttribute('aria-pressed',m==='gp');
-  document.getElementById('btn-pt').setAttribute('aria-pressed',m==='patient');
-  update();
-}
-function resetAll(){
-  document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false);
-  for(const k in state)delete state[k];
-  update();
-}
-
-function update(){
-  const patient=document.body.classList.contains('patient');
-  const flags=FLAGS.filter(f=>state[f.id]);
-  const bar=document.getElementById('alertbar');
-  const sig=flags.map(f=>f.id).join(',')+'|'+patient;
-  if(bar.dataset.sig!==sig){
-    bar.dataset.sig=sig;
-    bar.innerHTML=flags.length
-      ?'<h3>Stop and act on this first</h3>'
-       +'<p class="gp-only" style="margin-bottom:4px">One or more red flags are ticked. Complete the rest of the screen if useful, but the actions below take priority over any subtype classification.</p>'
-       +'<p class="pt-only" style="margin-bottom:4px">You have ticked something that needs a doctor to look at it soon. Please contact your GP practice, or 999 / A&amp;E where stated below.</p>'
-       +'<ul>'+flags.map(f=>`<li><strong>${patient?f.pt:f.gp}.</strong> ${f.act}</li>`).join('')+'</ul>'
-      :'';
-  }
-
-  let o=0,p=0,v=0;
-  ALL.forEach(i=>{if(state[i.id]){o+=i.w.o||0;p+=i.w.p||0;v+=i.w.v||0;}});
-  const maxO=23,maxP=25,maxV=24;
-  set('obs',o,maxO);set('pat',p,maxP);set('ves',v,maxV);
-
-  const net=(p/maxP)-(o/maxO);
-  document.getElementById('marker').style.left=Math.max(2,Math.min(98,50+net*46))+'%';
-
-  const lead=[['obs',o/maxO],['pat',p/maxP],['ves',v/maxV]].sort((a,b)=>b[1]-a[1]);
-  ['obs','pat','ves'].forEach(k=>document.getElementById('c-'+k).classList.remove('lead'));
-  if(lead[0][1]>0)document.getElementById('c-'+lead[0][0]).classList.add('lead');
-
-  let title,body;
-  if(o+p+v===0){title="Nothing ticked yet";body="Work through steps 1 to 3 and a suggested next step will appear here.";}
-  else if(flags.length){
-    title="Red flag present — assess before classifying";
-    body=patient
-      ?"Please act on the red flag box above first. The pattern below is still useful information to bring to that appointment."
-      :"Address the flagged item first. The subtype pattern below remains useful context but should not delay ENT or emergency assessment.";
-  } else {
-    const k=lead[0][0], strong=lead[0][1]>=0.4, mixed=lead[0][1]-lead[1][1]<0.12 && lead[1][1]>0.25;
-    if(mixed){
-      title="Mixed picture";
-      body=patient
-        ?"Your answers point in more than one direction. That is common and does not mean anything is wrong with your answers — take this to your GP and ask for an ear examination and a hearing test to separate them."
-        :"Two patterns are scoring similarly. Tympanometry and audiometry, plus positional testing, will separate them faster than further history. Treat the vestibular component in parallel if positional features are present.";
-    } else if(k==='pat'){
-      title=strong?"Points towards patulous Eustachian tube dysfunction":"Some patulous features";
-      body=patient
-        ?"This is the 'too open' pattern. Lying down helping, and hearing your own breathing, are the giveaways. Ask your GP about it by name — and be aware that decongestants and ear-popping usually make this type worse, not better."
-        :"Avoid decongestants, auto-inflation and drying agents, which worsen patency. Check recent weight trajectory including GLP-1 use. Hydration and, where appropriate, ENT review for the patulous pathway. Vestibular rehabilitation is not indicated for the ear symptom itself.";
-    } else if(k==='obs'){
-      title=strong?"Points towards obstructive Eustachian tube dysfunction":"Some obstructive features";
-      body=patient
-        ?"This is the 'not opening properly' pattern. Treating the nose usually comes first. Ask your GP about a hearing test and an eardrum pressure test if it has lasted more than three months."
-        :"Treat nasal and sinus inflammation first; consider ETDQ-7 at baseline, tympanometry and audiometry. Persisting beyond 3 months despite optimal medical management, or any retraction, warrants ENT review.";
-    } else {
-      title=strong?"Points towards a vestibular cause":"Some vestibular features";
-      body=patient
-        ?"The pattern suggests your balance system rather than ear pressure. Positional vertigo is often fixed in one or two appointments, and longer-standing unsteadiness responds well to a structured rehabilitation programme."
-        :"Positional features warrant Dix–Hallpike and supine roll testing with repositioning. Chronic non-spinning unsteadiness, visual sensitivity or post-vestibular imbalance is appropriate for direct vestibular rehabilitation referral.";
-    }
-  }
-  document.getElementById('v-title').textContent=title;
-  document.getElementById('v-body').textContent=body;
-  writeSummary(flags,o,p,v,title);
-}
-function set(k,val,max){
-  document.getElementById('s-'+k).textContent=val;
-  document.getElementById('b-'+k).style.width=Math.min(100,(val/max)*100)+'%';
-}
-function writeSummary(flags,o,p,v,title){
-  const patient=document.body.classList.contains('patient');
-  const picked=ALL.filter(i=>state[i.id]).map(i=>'  - '+(patient?i.pt:i.gp));
-  let s='MIDLIFE EAR AND BALANCE SCREEN — '+new Date().toLocaleDateString('en-GB')+'\n';
-  s+='Scores: obstructive '+o+' | patulous '+p+' | vestibular '+v+'\n';
-  s+='Working pattern: '+title+'\n\n';
-  s+='Red flags: '+(flags.length?'\n'+flags.map(f=>'  - '+(patient?f.pt:f.gp)+' → '+f.act).join('\n'):'none ticked')+'\n\n';
-  s+='Features ticked:'+(picked.length?'\n'+picked.join('\n'):' none')+'\n';
-  document.getElementById('summary').textContent=s;
-}
-function copySummary(){
-  const t=document.getElementById('summary').textContent;
-  const btn=document.getElementById('copybtn');
-  navigator.clipboard.writeText(t).then(
-    ()=>{btn.textContent='Copied';setTimeout(()=>btn.textContent='Copy summary for the notes',1800);},
-    ()=>{btn.textContent='Select the text below and copy it manually';}
-  );
-}
-update();
-</script>
 </html>
